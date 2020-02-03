@@ -1,0 +1,9 @@
+path # 
+path /bin /bin/usr # Comment is here
+path
+ls
+echo test
+& wc Processor.c
+ls
+exit
+ls
