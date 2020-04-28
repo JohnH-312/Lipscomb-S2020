@@ -1,0 +1,47 @@
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;     Project:    Intersection.scm
+;     Name:       Jonny Hughes
+;     Class:      Comparative Programming Languages
+;     Proffessor: Dr. Crawley
+;     Last Edit:  4/7/20
+;
+;    Info: There are two functions defined
+;        the first used to find which elems exist in
+;        lists. The second finds the intersection of
+;        two provided lists
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+; Function: intersection
+; Use:      this function takes two lists and returns
+;           a sigle list contating only elements within
+;           both of the original lists.
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+(define (intersection list1 list2)
+  (cond ((null? list1)
+         '())
+        ((memberof? (car list1) list2)
+         (cons (car list1) (intersection (cdr list1) list2)))
+        (else
+         (intersection (cdr list1) list2))
+        )
+)
+
+
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+; Function: memberof?
+; Use:      this function takes an element and a list
+;           and returns #t if element is an element of
+;           the provided list, #f if it is not.
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+(define (memberof? atm lst) 
+  (cond ((null? lst)
+         #f)
+        ((eqv? atm (car lst))
+         #t)
+        (else
+         (memberof atm (cdr lst)))
+        )
+)
+

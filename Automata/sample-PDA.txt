@@ -1,0 +1,23 @@
+PDA
+---
+A B C
+---
+0 1
+---
+M Z
+---
+A
+---
+Z
+---
+C
+---
+A,0,Z,A,MZ
+A,0,M,A,MM
+A,e,Z,B,Z
+A,e,M,B,M
+B,1,M,B,e
+B,e,Z,C,Z
+---
+this PDA demonstrates format for input:
+states, input alphabet, stack alphabet, start state, initial stack symbol, accepting states, transitions

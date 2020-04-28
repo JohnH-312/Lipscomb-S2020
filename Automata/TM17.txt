@@ -1,0 +1,36 @@
+TM
+---
+A B C D E F G
+---
+0 1 X Y b
+---
+0 1
+---
+b
+---
+A
+---
+G
+---
+A,0,B,X,R
+A,1,C,Y,R
+A,b,G,b,R
+B,0,B,0,R
+B,1,B,1,R
+B,b,D,b,L
+C,0,C,0,R
+C,1,C,1,R
+C,b,D,b,L
+D,0,E,b,L
+D,1,F,b,L
+E,0,E,0,L
+E,1,E,1,L
+E,X,A,b,R
+F,0,F,0,L
+F,1,F,1,L
+F,Y,A,b,R
+---
+language : L = { wwR | w ∊ {0,1}* }
+this TM demonstrates format for input:
+states, tape alphabet, input alphabet, blank symbol, start state, accepting states, transitions
+

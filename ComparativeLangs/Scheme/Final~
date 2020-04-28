@@ -1,0 +1,17 @@
+
+
+(define (length lst)
+  (cond ((null? lst) 0)
+        (else (+ 1 (length (cdr lst)))
+  )
+)
+
+(define (sum lst)
+  (cond ((null? lst) (car lst))
+        (else (+ (car lst) (sum (cdr lst)))
+  )
+)
+
+(define (avg lst)
+  ((sum lst) / (length lst))
+)

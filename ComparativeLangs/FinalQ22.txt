@@ -1,0 +1,17 @@
+~~~~~~~~~~~~~~~~~~~~~~~~
+ Jonny Hughes Exam Q22
+~~~~~~~~~~~~~~~~~~~~~~~~
+S -> Exp
+Exp -> Exp + Amp
+Exp -> Amp
+Amp -> Amp & Par
+Amp -> Par
+Par -> Id
+Par -> ( Exp ) 
+Id -> a | b
+
+Can make strings:
+a & (b + a)
+(b + a) & b + (b & (a & b))
+a
+a + a

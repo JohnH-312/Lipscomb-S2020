@@ -1,0 +1,16 @@
+ RG
+ ---
+ S A B
+ ---
+ 0 1
+ ---
+ S
+ ---
+ S,1S
+ S,A
+ A,01A
+ A,B
+ B,0B
+ B,e
+ ---
+ This regular right-linear defines the language containing all strings in 1*(01)*0*

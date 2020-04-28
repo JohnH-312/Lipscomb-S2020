@@ -74,8 +74,4 @@ final class pagesTest extends _base {
         ];
     }
 
-    public function test_DB() {
-        
-    }
-
 }

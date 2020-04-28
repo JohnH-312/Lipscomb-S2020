@@ -1,0 +1,33 @@
+TM
+---
+A B C D E F
+---
+0 1 2 X b
+---
+0 1 2
+---
+b
+---
+A
+---
+F
+---
+A,0,B,b,R
+A,b,F,b,L
+A,X,A,b,R
+B,0,B,0,R
+B,1,C,X,R
+B,X,B,X,R
+C,1,C,1,R
+C,2,C,2,R
+C,b,D,b,L
+D,2,E,b,L
+E,0,E,0,L
+E,1,E,1,L
+E,2,E,2,L
+E,X,E,X,L
+E,b,A,b,R
+---
+language : 0^n 1^n 2^n
+this TM demonstrates format for input:
+states, tape alphabet, input alphabet, blank symbol, start state, accepting states, transitions

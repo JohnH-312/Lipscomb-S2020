@@ -1,0 +1,18 @@
+DFA
+---
+A B C
+---
+0 1
+---
+A
+---
+C
+---
+A,0,B
+A,1,A
+B,0,C
+B,1,A
+C,0,C
+C,1,A
+---
+This DFA defines the language accepting all strings ending in 00

@@ -1,0 +1,45 @@
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+;     Project:    Final.scm
+;     Name:       Jonny Hughes
+;     Class:      Comparative Programming Languages
+;     Proffessor: Dr. Crawley
+;     Last Edits: 4/28/2020
+;
+;    Info: This program calculates the avg of a numerical list
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+; Function: avg
+; Use:      this function takes a list and returns it's
+;           average, or returns an error message
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+(define (avg lst)
+  (cond ((> (leng lst) 0) (/ (sum lst) (leng lst)))
+        (else '(this is not a valid list to take the avg of))
+  )
+)
+
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+; Function: leng
+; Use:      this function takes a list and calculates it's
+;           length. this models the built in length function
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+(define (leng lst)
+  (cond ((null? lst) 0)
+        (else (+ 1 (leng (cdr lst))))
+  )
+)
+
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+; Function: sum
+; Use:      this function takes a list and calculates
+;           the sum of all the individual values
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+(define (sum lst)
+  (cond
+    ((null? lst) 0)
+    ((= (leng lst) 1) (car lst))
+    (else (+ (car lst) (sum (cdr lst))))
+  )
+)
+

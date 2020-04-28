@@ -1,0 +1,23 @@
+UG
+---
+S A B C X L T J
+---
+0 1 2
+---
+S
+---
+S,BS
+S,X
+X,AX
+X,T
+BA,ABC
+CA,AC
+CB,BC
+CT,T2
+BT2,BL2
+BL,L1
+AL1,AJ1
+AJ,J0
+J,e
+---
+This unrestricted grammar produces all strings in form { 0a1b2ab | a,b ≥ 1 }

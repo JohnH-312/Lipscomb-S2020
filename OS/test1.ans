@@ -1,0 +1,11 @@
+2 4
+-4 0 4 4 
+-8 0 8 8 
+2 2
+-12 -8 
+-24 -16 
+0 0
+Reading: 132600ns
+Computing: 3700ns
+Writing: 26100ns
+Elapsed: 163800ns

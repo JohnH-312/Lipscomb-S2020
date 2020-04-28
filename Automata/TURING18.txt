@@ -1,0 +1,71 @@
+TM
+---
+A B C D E F G H I J
+---
+0 1 X Y Z b
+---
+0 1
+---
+b
+---
+A
+---
+J
+---
+A,0,B,X,R
+A,1,B,Y,R
+A,Y,E,Y,L
+A,X,E,X,L
+-THIS STATE IS AT CURR LEFT
+
+B,0,B,0,R
+B,1,B,1,R
+B,b,C,b,L
+B,X,C,X,L
+B,Y,C,Y,L
+- MOVING RIGHT TO END
+
+C,0,D,X,L
+C,1,D,Y,L
+- AT CURR RIGHT
+
+D,0,D,0,L
+D,1,D,1,L
+D,X,A,X,R
+D,Y,A,Y,R
+- MOVING BACK TO CURR LEFT
+
+E,X,E,0,L
+E,Y,E,1,L
+E,b,F,b,R
+- AT END OF W1 
+
+F,0,G,Z,R
+F,1,H,Z,R
+F,b,J,b,L
+- AT FRONT OF W
+
+G,1,G,1,R
+G,0,G,0,R
+G,b,G,b,R
+G,X,I,b,L
+- FINDING X
+
+H,1,H,1,R
+H,0,H,0,R
+H,b,H,b,R
+H,Y,I,b,L
+- FINDING Y
+
+I,1,I,1,L
+I,0,I,0,L
+I,b,I,b,L
+I,Z,F,Z,R
+- GOING BACK
+
+
+---
+language : L = { wwR | w ∊ {0,1}* }
+this TM demonstrates format for input:
+states, tape alphabet, input alphabet, blank symbol, start state, accepting states, transitions
+

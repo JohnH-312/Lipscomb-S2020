@@ -1,0 +1,23 @@
+eNFA
+---
+A B C D E F
+---
+0 1
+---
+A
+---
+C F
+---
+A,0,B 
+A,e,D
+B,1,C
+C,0,C 
+C,1,C
+D,0,E 
+D,0,D 
+D,1,D
+E,1,F
+---
+sample input for an epsilon-NFA
+accepting all strings that
+begin and/or end with 01

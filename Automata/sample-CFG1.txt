@@ -1,0 +1,12 @@
+CFG
+---
+S
+---
+0 1
+---
+S
+---
+S,0S1
+S,e
+---
+This context-free grammar produces all strings 0^n 1^n

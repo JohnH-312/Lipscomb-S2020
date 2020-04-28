@@ -1,0 +1,14 @@
+CFG
+---
+S A
+---
+0 1 2
+---
+S
+---
+S,0S2
+S,A
+A,1A
+A,e
+---
+This context-free grammar produces all strings 0^i 1^j 2^k, i=k

@@ -1,0 +1,25 @@
+UG
+---
+S Q E A B X Y
+---
+0 1
+---
+S
+---
+S,QE
+Q,0QA
+Q,1QB
+Q,e
+E,e
+AE,XE
+AX,XA
+BX,XB
+0X,00
+1X,10
+BE,YE
+AY,YA
+BY,YB
+0Y,01
+1Y,11
+---
+This unrestricted grammar produces all strings in form ww, in {0,1}

@@ -1,0 +1,17 @@
+UG
+---
+S A L F T R
+---
+1
+---
+S
+---
+S,TX
+X,AX
+X,LF
+AL,L1
+TL,R
+R1,11R
+RF,e
+---
+This unrestricted grammar produces all strings in form{  w ∈ {1}*  |   |w| = 2^k, k ≥ 0 }

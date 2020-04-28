@@ -1,0 +1,53 @@
+(define (hyp s1 s2)
+  (sqrt (+(square s1) (square s2)))
+)
+
+(define (flatten lst)
+  (cond
+    ((null? lst) 	
+    '())
+    ((list? (car lst))
+     (append (flatten (car lst)) (flatten (cdr lst))))
+    (else 
+     (cons (car lst) (flatten (cdr lst))))
+  )
+)
+
+(define (square number) (* number number))
+
+(define (memberof atm lst) 
+  (cond ((null? lst) #f)
+        ((eqv? atm (car lst)) #t)
+        (else (memberof atm (cdr lst)))
+        )
+)
+(define (join arg1 arg2)
+  (cond 
+    ((null? arg1) arg2)
+    (else (cons (car arg1) (join (cdr arg1) arg2)))
+    )
+)
+(define (insert atm lst)
+  (cond 
+    ((null? lst)
+     (list atm)
+     )
+    ((<= atm (car lst))
+     (cons atm lst)
+     )
+    (else 
+     (cons (car lst) (insert atm (cdr lst)))
+     )
+    )
+)
+
+(define (sort lst)
+	(cond
+		((null? lst)
+			'()
+		)
+		(else 
+			(insert (car lst) (sort (cdr lst)))
+		)
+	)
+)
